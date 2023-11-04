@@ -31,7 +31,7 @@
 <details><summary>🔥 Deploy To Koyeb 🔥</summary>
 <p>
 <br>                 
-<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/ritesh-0/RenameSnowProBot" >
+<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/Hassanaliuuq/RenameSnowProBot" >
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy">
 </a>
 </p>
