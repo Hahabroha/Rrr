@@ -16,7 +16,7 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton('🚩 ᴘᴘᴅᴀᴛᴇꜱ 🚩', url='https://t.me/hdlinks4uu'),
+        InlineKeyboardButton('🚩 ᴜᴘᴅᴀᴛᴇꜱ 🚩', url='https://t.me/hdlinks4uu'),
         InlineKeyboardButton('📍 ᴏᴡɴᴇʀ 📍', url='https://t.me/badal6667rai')
         ],[
         InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ 🔰', callback_data='about'),
@@ -64,7 +64,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton('🚩 ᴘᴘᴅᴀᴛᴇꜱ 🚩', url='https://t.me/hdlinks4uu'),
+        InlineKeyboardButton('🚩 ᴜᴘᴅᴀᴛᴇꜱ 🚩', url='https://t.me/hdlinks4uu'),
         InlineKeyboardButton('📍 ᴏᴡɴᴇʀ 📍', url='https://t.me/badal6667rai')
         ],[
         InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ 🔰', callback_data='about'),
