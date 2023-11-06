@@ -3,7 +3,10 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import FloodWait
 import humanize
+from pyshorteners import Shortener
 import random
+import os
+import strings
 from helper.txt import mr
 from helper.database import db
 from config import START_PIC, FLOOD, ADMIN
