@@ -1,6 +1,6 @@
 class mr(object):
     PROGRESS_BAR = """\n
-╭━━━━❰ Snowball Processing... ❱━➣
+╭━━━━❰ ᴡᴀɪᴛ ʙʀᴏ ᴘʀᴏᴄᴇꜱꜱɪɴɢ... ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
@@ -10,12 +10,11 @@ class mr(object):
     ABOUT_TXT = """
 ╭───────────⍟
 ├🤖 The Name is : {}
-├👑 ADMIN-TG : <a href=https://t.me/Snowball_Official>SNOWBALL</a> 
-├👑 Instagram : <a href=https://www.instagram.com/ritesh6_>C-Insta</a> 
-├📕 LIBRARY : <a href=https://github.com/pyrogram>Pyrogram</a>
-├✏️ LANGUAGE : <a href=https://www.python.org>Python 3</a>
-├💾 DATABASE : <a href=https://cloud.mongodb.com>MongoDB</a>
-├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>Heroku</a>               
+├👑 ADMIN-TG : @Khandudon302
+├📕 LIBRARY : Pyrogram
+├✏️ LANGUAGE : Python 3
+├💾 DATABASE : MongoDB
+├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : Heroku             
 ╰───────────────⍟
                                 """
     HELP_TXT = """
@@ -36,7 +35,7 @@ Example:- /set_caption 📕 File Name: {filename}
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://www.instagram.com/ritesh6_>Direct Message</a>
+ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/khandudon302>Direct Message</a>
 """
 
 
