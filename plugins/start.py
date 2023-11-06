@@ -3,7 +3,10 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import FloodWait
 import humanize
-import random
+import randon
+from helper.txt import mr
+from helper.database import db
+from config import START_PIC, FLOOD, ADMIN
 
 # Replace this with your actual URL
 SHORTENED_URL = "https://short.url.com"
