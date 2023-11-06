@@ -1,4 +1,4 @@
-from asyncio import sleep
+import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import FloodWait
@@ -7,9 +7,11 @@ from pyshorteners import Shortener
 import random
 import os
 import strings
+import logging
 from helper.txt import mr
 from helper.database import db
 from config import START_PIC, FLOOD, ADMIN
+from datetime import datetime, timedelta, date, time
 
 # Replace this with your actual URL
 SHORTENED_URL = "https://short.url.com"
@@ -25,7 +27,26 @@ async def start(client, message):
     if not user_data.get(user_id, {}).get('verified', False):
         verification_message = f"Please complete the following URL to verify your account:\n{SHORTENED_URL}\nVerification Code: {VERIFICATION_CODE}"
         await message.reply_text(verification_message)
-    else:
+    elif data.split("-", 1)[0] == "verify":
+        userid = data.split("-", 2)[1]
+        token = data.split("-", 3)[2]
+        if str(message.from_user.id) != str(userid):
+            return await message.reply_text(
+                text="<b>Invalid link or Expired link !</b>",
+                protect_content=True
+            )
+        is_valid = await check_token(client, userid, token)
+        if is_valid == True:
+            await message.reply_text(
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                protect_content=True
+            )
+            await verify_user(client, userid, token)
+        else:
+            return await message.reply_text(
+                text="<b>Invalid link or Expired link !</b>",
+                protect_content=True
+            )
         # User is verified, proceed with your code
         txt = f"👋 Hello Developer {user.mention}\n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document!"
         button = InlineKeyboardMarkup([[
