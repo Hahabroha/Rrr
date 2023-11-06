@@ -4,8 +4,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceRepl
 from pyrogram.errors import FloodWait
 from pyshorteners import Shortener
 import redis
-from pyrogram import Client
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import humanize
 import random
 from helper.txt import mr
